@@ -1,0 +1,120 @@
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Brightblue10: hsla(246, 34%, 41%, 0.4);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+/* - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(images/pattern-background-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1.3fr 1fr .5fr 1fr;
+    gap: .5rem;
+    max-width: 18rem;
+    margin: 2rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem var(--Brightblue10);
+}
+
+.top-card {
+    background: url(images/illustration-hero.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.info-card {
+    text-align: center;
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+
+h1 {
+    color: var(--Darkblue);
+    padding-bottom: 1rem;
+}
+
+p {
+    color: var(--Desaturatedblue);
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+
+.precio-card {
+    background-color: var(--Verypaleblue);
+    margin: 0 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: .8rem;
+}
+
+.link1 {
+    padding-left: 1rem;
+    font-size: 13px;
+    color: var(--Brightblue);
+    font-weight: bold;
+}
+
+.link1:hover {
+    text-decoration: none;
+}
+
+.btn-card {
+    display: grid;
+    place-items: center;
+    padding-top: .5rem;
+}
+
+.blue-btn {
+    background: var(--Brightblue);
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem var(--Brightblue10);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.blue-btn:hover {
+    background-color: hsl(245, 42%, 57%);
+    cursor: pointer;
+}
+
+.link2 {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-weight: bold;
+}
+
+.link2:hover {
+    color: var(--Darkblue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
