@@ -1,7 +1,8 @@
 :root {
     --Paleblue: hsl(225, 100%, 94%);
     --Brightblue: hsl(245, 75%, 52%);
-    --Brightblue10: hsla(246, 34%, 41%, 0.4);
+    --Brightblue10: hsla(246, 62%, 19%, 0.1);
+    --Brightblue20: hsla(246, 62%, 19%, 0.2);
     --Verypaleblue: hsl(225, 100%, 98%);
     --Desaturatedblue: hsl(224, 23%, 55%);
     --Darkblue: hsl(223, 47%, 23%);
@@ -23,8 +24,8 @@ body {
     font-size: 15px;
     font-family: 'Red Hat Display', sans-serif;
     background: url(images/pattern-background-desktop.svg);
-    background-position: center;
-    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -32,11 +33,11 @@ body {
     display: grid;
     grid-template-rows: 1.3fr 1fr .5fr 1fr;
     gap: .5rem;
-    max-width: 18rem;
+    max-width: 19rem;
     margin: 3rem 1rem;
     background-color: white;
     border-radius: 1rem;
-    box-shadow: .1rem .5rem 1rem var(--Brightblue10);
+    box-shadow: 0rem 1rem 1.5rem var(--Brightblue10);
 }
 
 .top-card {
@@ -48,12 +49,13 @@ body {
 
 .info-card {
     text-align: center;
-    padding: 0 1.5rem 1rem 1.5rem;
+    padding: .1rem 2rem 1rem 2rem;
 }
 
 h1 {
     color: var(--Darkblue);
     padding-bottom: 1rem;
+    font-weight: 900;
 }
 
 p {
@@ -65,11 +67,11 @@ p {
 .precio-card {
     background-color: var(--Verypaleblue);
     margin: 0 1.5rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: .8rem;
+    padding: 1rem 1rem;
 }
 
 .link1 {
@@ -86,16 +88,17 @@ p {
 .btn-card {
     display: grid;
     place-items: center;
-    padding-top: .5rem;
+    padding: .5rem 0;
 }
 
 .blue-btn {
     background: var(--Brightblue);
     border: none;
     color: white;
-    padding: 1rem 3rem;
-    border-radius: 1rem;
-    box-shadow: .1rem .5rem 1rem var(--Brightblue10);
+    padding: 1rem;
+    width: 16rem;
+    border-radius: .6rem;
+    box-shadow: 0rem .6rem 1rem var(--Brightblue20);
     font-weight: 700;
     font-size: 15px;
 }
