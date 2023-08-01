@@ -6,3 +6,5 @@ https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj
 
 Aqui puedes ver el producto final:
 https://resumesumary-card-css.netlify.app/
+
+![desktop-preview](https://github.com/VickyAzola/ResumeSumaryCard/assets/116470398/28360f67-9931-4697-99be-eafd8b0c2530)
